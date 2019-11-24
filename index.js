@@ -1,0 +1,1 @@
+document.write.innerHTML("Hello");
