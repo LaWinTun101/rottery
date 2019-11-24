@@ -1,1 +1,2 @@
-document.write.innerHTML("Hello");
+var ob = document.getElementByTagName("p");
+ob.innerHTML = "yun lay";
