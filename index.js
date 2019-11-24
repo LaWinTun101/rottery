@@ -1,11 +1,12 @@
+﻿document.write(" Comparing Two number ");
 
-
-var p = document.createElement("p");
-var node = document.createTextNode("Hello World");
-p.appendChild(node);
-
-
-var body = document.getElementByTagName("body");
-body.appendChild(p);
-
-
+function compare(){
+var vone = parseInt(document.getElementById("fn").value);
+var vtwo = parseInt(document.getElementById("sn").value);
+if (vone > vtwo) {
+  alert("First number is greater than second number");
+ }
+else {
+  alert("Second number is greater than first number");
+}
+}
