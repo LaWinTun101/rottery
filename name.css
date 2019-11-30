@@ -1,5 +1,8 @@
-body{background-color:coral; 
-font-famliy:Times,"Times New Roman", san-serif;}
+body{
+background-color:coral; 
+font-famliy:Times,"Times New Roman", san-serif; 
+padding:0; 
+margin:0;}
 
 	.zaw{
 			font-family:Zawgyi-One;
@@ -7,3 +10,27 @@ font-famliy:Times,"Times New Roman", san-serif;}
 		.uni{
 			font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
 		}
+
+/* new */
+
+.headerInnerRow{
+display:flex;
+width:100%; 
+height:50px;
+}
+
+.headerColumnRight , .headerColumnLeft{
+float:left;
+width:50%; 
+height:100%;  
+}
+
+.headerColumnRight{ 
+background-color:red;}
+
+.headerColumnLeft{ 
+background-color:green;}
+
+
+
+
