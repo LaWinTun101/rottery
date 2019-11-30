@@ -4,33 +4,68 @@ font-famliy:Times,"Times New Roman", san-serif;
 padding:0; 
 margin:0;}
 
-	.zaw{
-			font-family:Zawgyi-One;
-		}
-		.uni{
-			font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
-		}
+    .zaw{
+            font-family:Zawgyi-One;
+        }
+        .uni{
+            font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
+        }
 
 /* new */
 
 .headerInnerRow{
+margin-top:1px;
 display:flex;
 width:100%; 
-height:50px;
+height:auto;
+background-color:none;
 }
 
 .headerColumnRight , .headerColumnLeft{
+display:flex;
 float:left;
 width:50%; 
-height:100%;  
+height:70px;  
+border:;
 }
 
 .headerColumnRight{ 
-background-color:red;}
+background-color:none;}
 
 .headerColumnLeft{ 
-background-color:green;}
+background-color:none;}
 
+#btnZawgyi,#btnUni{
+    margin:auto;
+    width:70%;
+    height:60%;
+    border:dotted 1px white;
+    border-radius:6px;
+    background:none;
+    color:white;
+}
+.textTest{
+    margin:4px;
+    border:solid 1px white;
+    background-color:;
+}
 
+@font-face {
+ font-family: 'Zawgyi-One'; 
+ src: url('zawgyi.eot');
+ src: local('Zawgyi-One'), url('zawgyi.ttf') format('truetype'), url('zawgyi.woff') format('woff'), url('zawgyi.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
 
-
+#CodeBox{
+    width:80%;
+    height:auto;
+    overflow:auto;
+    border:solid 1px lightgray;
+    background-color:black;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
