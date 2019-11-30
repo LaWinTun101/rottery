@@ -10,28 +10,107 @@
 <meta http-equiv="refresh" content="3600.0">
 <meta name="author" content=" ">
 <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
-	<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />	 
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />     
 <link href="name.css" rel="stylesheet" type="text/css">
 <script src="name.js" type="text/javascript"></script>
 <tltle>
 </tltle>
 </head>
-<body onload="init()">
+<body onload="init()" id="bodyBd">
 
 <!-- new -->
-<header>
+<div class="textFix">
+<center>
+<p style="color:white;">будь счастлив, здоров и богат</p>
+<p class ="zaw" style="color:white;">​​ေဇာ္​ဂ်ီ-ယူနီ​ေဖာင္​့​​ထိန္​းခ်ဳပ္​မႈ ထည္​့သြင္​းျခင္​း</p>
+<p class ="uni" style="color:lightgray;">ေဇာ္​ဂ်ီ-ယူနီ​ေဖာင္​့​​ထိန္​းခ်ဳပ္​မႈ ထည္​့သြင္​းျခင္​း</p>
+</center>
+</div>
+
+<div class="textTest">
+<center><br>
+<p id="zp" style="color:white;">က်န္​းမာခ်မ္​းသာ​ေတာ္​မူၾကပါစခင္​ဗ်ာ<br> ကြၽန္​​ေတာ္​ လဝင္​းထြန္​းပါ </p><br>
+</center>
+</div>
+
 <div class="headerInnerRow">
 <div class="headerColumnRight">
+<button id="btnUni">Click UniCode</button>
 </div>
 <div class="headerColumnLeft">
+<button id="btnZawgyi">Click ZawGyi</button>
 </div>
 </div>
-</header>
-<br>
+
 <!-- new -->
-<center>
-<p class = "zaw">လဝင္​းထြန္​း</p><br>
-<p class ="uni" > လဝင္းထြန္း</p>
-</center>
+<br>
+<center><p style="color:white; text-shadow:4px 0 2px black;">Sample Source Codes</p></center>
+<div id="CodeBox">
+
+    <pre><code>
+ #index.Html 
+ 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;Link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi'/&gt; 
+    //Above Link for Zawgyi Font
+    
+    &lt;Link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3'/&gt; 
+    //Above link for Unicode Font
+    
+    &lt;Link rel="stylesheet" href="style.css" type="text/css" /&gt;
+    //Above link for Css file
+    
+    &lt;script src="script.js" type="text/javascript" &gt;&lt;/script&gt;
+    //Above source for external jscript file
+    
+  &lt;/head&gt;
+  
+&lt;body&gt;
+
+ &lt;p&gt; Write Something in Myanmar language ...&lt/p&gt
+ 
+ &lt;button id="zGy"&gt;ZawGyi&lt;/button&gt;
+ 
+ &lt;button id="uNi"&gt;Uni&lt;/button&gt;
+ 
+&lt;/body&gt;
+&lt;/html&gt;
+
+------------------------------------------------
+
+ #style.css
+ 
+ *{} //As you like style sheet
+ .zGy{} //As you like style Sheet
+ .uNi{} //As you like 
+ p{} //As you like
+ 
+}
+ 
+----------------------------------------------------
+ 
+ #script.js
+ 
+      
+document.getElementById("zGy").addEventListener('click',ZawgyiFun);
+ 
+function ZawgyiFun(){
+       document.getElementsByTagName("p").style.fontFamily="Zawgyi-One";
+}
+
+document.getElementById("uNi").addEventListener('click',UniCodeFun);
+ 
+function UniCodeFun(){
+    document.getElementsByTagName("p").style.fontFamily=" 'Masterpiece Uni Sans',Myanmar3 ";
+}
+
+        </code>
+    </pre>
+    
+</div>
+<footer><br>
+    <center><h1 style="color:lightgray; font-family:Times;"> Bye Bye </h1></center><br>
+</footer>
 </body>
 </html>
