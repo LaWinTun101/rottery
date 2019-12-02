@@ -1,5 +1,5 @@
 function init(){
-    alert ("Mingalar Par");
+    
 
 var x = document.getElementById("btnZawgyi");
 x.addEventListener('click',zgyFun);
