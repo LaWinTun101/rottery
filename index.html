@@ -30,100 +30,20 @@ La Win Tun (IT Student) </title>
 }
 </script>
 </head>
-<body onload="init()" id="bodyBd">
 
-<!-- new -->
-<div class="textFix">
-<center>
-<p style="color:white;">будь счастлив, здоров и богат</p>
-<p class ="zaw" style="color:white;">​​ေဇာ္​ဂ်ီ-ယူနီ​ေဖာင္​့​​ထိန္​းခ်ဳပ္​မႈ ထည္​့သြင္​းျခင္​း</p>
-</center>
+<body onload="init()">
+<header>
+</header>
+<div class="parent" onload="animiPg()">
+<div class="child">
+<div class="logo">
+<img src="tumdy.jpg" class="currImage"></img>
 </div>
-
-<div class="textTest">
-<center><br>
-<p id="zp" style="color:white;">က်န္​းမာခ်မ္​းသာ​ေတာ္​မူၾကပါစခင္​ဗ်ာ<br> ကြၽန္​​ေတာ္​ လဝင္​းထြန္​းပါ </p><br>
-</center>
-</div>
-
-<div class="headerInnerRow">
-<div class="headerColumnRight">
-<button id="btnUni">Click UniCode</button>
-</div>
-<div class="headerColumnLeft">
-<button id="btnZawgyi">Click ZawGyi</button>
+<h1 class="ml2">Technological University</h1>
+<h1 class="ml3">Mandalay</h1>
 </div>
 </div>
 
-<!-- new -->
-<br>
-<center><p style="color:white; text-shadow:4px 0 2px black;">Sample Source Codes</p></center>
-<div id="CodeBox">
-
-    <pre><code>
- #index.Html 
- 
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;Link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi'/&gt; 
-    //Above Link for Zawgyi Font
-    
-    &lt;Link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3'/&gt; 
-    //Above link for Unicode Font
-    
-    &lt;Link rel="stylesheet" href="style.css" type="text/css" /&gt;
-    //Above link for Css file
-    
-    &lt;script src="script.js" type="text/javascript" &gt;&lt;/script&gt;
-    //Above source for external jscript file
-    
-  &lt;/head&gt;
-  
-&lt;body&gt;
-
- &lt;p&gt; Write Something in Myanmar language ...&lt/p&gt
- 
- &lt;button id="zGy"&gt;ZawGyi&lt;/button&gt;
- 
- &lt;button id="uNi"&gt;Uni&lt;/button&gt;
- 
-&lt;/body&gt;
-&lt;/html&gt;
-
-------------------------------------------------
-
- #style.css
- 
- *{} //As you like style sheet
- .zGy{} //As you like style Sheet
- .uNi{} //As you like 
- p{} //As you like
- 
-}
- 
-----------------------------------------------------
- 
- #script.js
- 
-      
-document.getElementById("zGy").addEventListener('click',ZawgyiFun);
- 
-function ZawgyiFun(){
-       document.getElementsByTagName("p").style.fontFamily="Zawgyi-One";
-}
-
-document.getElementById("uNi").addEventListener('click',UniCodeFun);
- 
-function UniCodeFun(){
-    document.getElementsByTagName("p").style.fontFamily=" 'Masterpiece Uni Sans',Myanmar3 ";
-}
-
-        </code>
-    </pre>
-    
-</div>
-<footer><br>
-    <center><h1 style="color:lightgray; font-family:Times;"> Bye Bye </h1></center><br>
-</footer>
+<center><h3 class="ml4">Dev La Win Tun | support@tu-mdy.tech </h3></center>
 </body>
 </html>
