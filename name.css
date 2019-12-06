@@ -45,14 +45,15 @@ background-color:white;
 }
 
 .parent{
-display:table;
+display: flex;
+justify-content: center;
+align-items: center;
 width:100%;
 height:85%;
 background-color:white;
 }
 
 .child{
-display:table-cell;
 vertical-align:middle;
 text-align:center;
 }
@@ -60,6 +61,8 @@ text-align:center;
 .currImage{
 width:20%;
 height:22%;
+margin-left:auto;
+margin-right:auto;
 animation: shine 4s infinite;
 border: solid 2.5px #D5AD6D;
 border-radius:10px;
