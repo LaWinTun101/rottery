@@ -1,5 +1,5 @@
 function init(){
-var Ttime = 10000;
+var Ttime = 12000;
 /*func1 */
 
 setTimeout(
@@ -46,6 +46,13 @@ if($this.data('clicked')){
 $(".containerImage").show();}
 else{
 $(".containerImage").hide();}});
+$(".btnSignup").click(function(){
+var $this = $(this); 
+$(this).data('clicked', true);
+if($this.data('clicked')){
+$(".containerImage").hide();}
+else{
+$(".containerImage").show();}});
 },100);
 /*innerFunc*/
 },Ttime);
