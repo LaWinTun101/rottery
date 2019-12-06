@@ -1,19 +1,19 @@
 function init(){
-var Ttime = 7000;
+var Ttime = 10000;
 /*func1 */
+
 setTimeout(
 function InitialanimiPage(){
-$(".currImage, .ml2, .ml3,.logo,.child,.parent").remove();
-},
-Ttime
-);
+$(".childImage, .ml2, .ml3,.logo,.text,.parent").remove();
+},Ttime);
 /*func1*/
+
 /*fun2*/
-setTimeout(
-function AnotherPage(){
+setTimeout(function AnotherPage(){
 $("header").append("<button class='btnSignin'>Sign In</button><button class='btnSignup'>Sign Up</button>").css({"width":"100%","height":"auto","background-color":"chocolate","position":"fixed"});
 $(".btnSignin, .btnSignup").css({
 "padding":"14px 16px",
+"font-size":"22px",
 "background-color":"chocolate", "color":"white",
 "display":"inline-block",
 "border-color":"white",
@@ -24,13 +24,7 @@ $(".btnSignin, .btnSignup").css({
 /*innerFunc*/
 setTimeout(
 function(){
-$(".parent").css({
-"width":"100%",
-"height":"500px",
-"border":"solid 1px black",
-"overflow":"hidden",
-"margin":"0px",
-});
+
 $("body").append("<div class='container'></div>");
 $(".container").append("<img src='tumdy.jpg' class='containerImage'></img><br>").hide();
 $(".container").css({
@@ -54,9 +48,7 @@ else{
 $(".containerImage").hide();}});
 },100);
 /*innerFunc*/
-},
-Ttime
-);
+},Ttime);
 /*func2*/
 /*func3*/
 var textWrapper = document.querySelector('.ml2');
@@ -92,8 +84,7 @@ delay: (el, i) => 70*i }).add({
     duration: 1000,
     delay: (el, i) => 100 + 30 * i
   });
-/*func3*/
-}
+/*func3*/}
 
 
 
