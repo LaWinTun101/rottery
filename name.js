@@ -1,5 +1,5 @@
 function init(){
-var Ttime = 10000;
+var Ttime = 8000;
 /*func1 */
 
 setTimeout(
@@ -25,35 +25,64 @@ $(".btnSignin, .btnSignup").css({
 setTimeout(
 function(){
 
-$("body").append("<div class='container'></div>");
-$(".container").append("<img src='tumdy.jpg' class='containerImage'></img><br><br><form><input type='email' placeholder='Enter email'></input></form>").hide();
+$("body").append("<div class='container'></div><div class='emailcontainer'><form><input type='email' placeholder='Enter Email' id='eml'></input><br><br><input type='password' placeholder='Enter Password' id='pwd'></input><br><br><button type='submit' id='smt'>Submit</button></form></div>");
+$(".container").append("<img src='tumdy.jpg' class='containerImage'>").hide();
 $(".container").css({
 "display": "flex",
+"flex-direction":"row",
  "justify-content": "center",
- "align-items": "center",
- "height": "100%"
+ "align-items": "end",
+ "height": "50%"
 });
+
+$(".emailcontainer").css({
+"display": "flex",
+"flex-direction":"row",
+"justify-content": "center",
+ "align-items": "center",
+ "height": "30%",
+}).hide();
+
+$("form").hide();
+$("#pwd, #eml, #smt").css({"width":"150px",
+"height":"35px"
+}).hide();
+$("#pwd, #eml").css({"border-bottom":"solid 2px coral",
+"border-top":"none",
+"border-left":"none",
+"border-right":"none"
+}).hide();
+$("#smt").css({"color":"white",
+"font-family":"Times, 'Times New Roman'",
+"font-size":"22px",
+"background-color":"coral",
+"border":"none",
+"border-radius":"15px"
+}).hide();
+
 $(".containerImage").css({
 "background-size":"cover",
 "background-position":"center",
 "width":"100px",
 "height":"100px"
 }).hide();
-$("form").hide();
+
+
+
 $(".btnSignin").click(function(){
 var $this = $(this); 
 $(this).data('clicked', true);
 if($this.data('clicked')){
-$(".containerImage, form").show();}
+$(".containerImage,.emailcontainer,form,#pwd, #eml, #smt").show();}
 else{
-$(".containerImage, form").hide();}});
+$(".containerImage, .emailcontainer,form").hide();}});
 $(".btnSignup").click(function(){
 var $this = $(this); 
 $(this).data('clicked', true);
 if($this.data('clicked')){
-$(".containerImage, form").hide();}
+$(".containerImage, .emailcontainer,form").hide();}
 else{
-$(".containerImage, form").show();}});
+$(".containerImage, .emailcontainer,form").show();}});
 },100);
 /*innerFunc*/
 },Ttime);
