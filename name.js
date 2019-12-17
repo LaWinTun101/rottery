@@ -1,5 +1,5 @@
 function init(){
-var Ttime = 12000;
+var Ttime = 10000;
 /*func1 */
 
 setTimeout(
@@ -26,7 +26,7 @@ setTimeout(
 function(){
 
 $("body").append("<div class='container'></div>");
-$(".container").append("<img src='tumdy.jpg' class='containerImage'></img><br>").hide();
+$(".container").append("<img src='tumdy.jpg' class='containerImage'></img><br><br><form><input type='email' placeholder='Enter email'></input></form>").hide();
 $(".container").css({
 "display": "flex",
  "justify-content": "center",
@@ -39,20 +39,21 @@ $(".containerImage").css({
 "width":"100px",
 "height":"100px"
 }).hide();
+$("form").hide();
 $(".btnSignin").click(function(){
 var $this = $(this); 
 $(this).data('clicked', true);
 if($this.data('clicked')){
-$(".containerImage").show();}
+$(".containerImage, form").show();}
 else{
-$(".containerImage").hide();}});
+$(".containerImage, form").hide();}});
 $(".btnSignup").click(function(){
 var $this = $(this); 
 $(this).data('clicked', true);
 if($this.data('clicked')){
-$(".containerImage").hide();}
+$(".containerImage, form").hide();}
 else{
-$(".containerImage").show();}});
+$(".containerImage, form").show();}});
 },100);
 /*innerFunc*/
 },Ttime);
