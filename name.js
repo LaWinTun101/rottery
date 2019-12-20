@@ -1,5 +1,5 @@
 function init(){
-var Ttime = 8000;
+var Ttime = 14000;
 /*func1 */
 
 setTimeout(
